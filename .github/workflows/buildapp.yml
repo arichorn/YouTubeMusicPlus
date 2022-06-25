@@ -1,7 +1,7 @@
 # Original idea by @ISnackable. Thanks to him for handling the hardest parts!
 # https://github.com/ISnackable/CercubePlus/blob/main/.github/workflows/Build.yml
 
-name: Build and Release uYouPlus
+name: Build and Release YouTube Music Plus
 
 on:
   workflow_dispatch:
@@ -11,8 +11,8 @@ on:
         default: "1.0"
         required: false
         type: string
-      decrypted_youtube_url:
-        description: "The direct URL to the decrypted YouTube ipa"
+      decrypted_youtubemusic_url:
+        description: "The direct URL to the decrypted YouTube Music ipa"
         default: ""
         required: true
         type: string
@@ -33,7 +33,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build YouTubeMusicPlus
+    name: Build YouTube Music Plus
     runs-on: macos-latest
     permissions:
       contents: write
